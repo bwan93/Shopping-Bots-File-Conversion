@@ -10,7 +10,7 @@ public class Soleslayer {
 	public static File inputFile = new File("User Profile.csv");
 	public static File outputFile = new File("C:/Users/chris/Desktop/ProgForBen/NewSoleslayer.txt");
 	
-	public static void main(String[] args) {
+	public static void createSoleslayer() {
 		
 		BufferedReader br = null;
 		BufferedWriter bwStart = null;
@@ -43,7 +43,7 @@ public class Soleslayer {
 				String [] csvData = line.split(csvSplitBy);
 				//write to output file
 				addProfile(csvData);
-				System.out.println("Successfully added profile " + csvData[0]);
+				System.out.println("SoleSlayer: Successfully added profile " + csvData[0]);
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

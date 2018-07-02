@@ -11,7 +11,7 @@ public class Eve {
 	public static File inputFile = new File("User Profile.csv");
 	public static File outputFile = new File("C:/Users/chris/Desktop/ProgForBen/NewEve.xml");
 	
-	public static void main(String[] args) {
+	public static void createEve() {
 		
 		BufferedReader br = null;
 		BufferedWriter bwStart = null;
@@ -46,7 +46,7 @@ public class Eve {
 				String [] csvData = line.split(csvSplitBy);
 				//write to output file
 				addProfile(csvData);
-				System.out.println("Successfully added profile " + csvData[0]);
+				System.out.println("EVE: Successfully added profile " + csvData[0]);
 			}	
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

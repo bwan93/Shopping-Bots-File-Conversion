@@ -11,7 +11,7 @@ public class Dashe {
 	public static File inputFile = new File("User Profile.csv");
 	public static File outputFile = new File("C:/Users/chris/Desktop/ProgForBen/NewDashe.json");
 	
-	public static void main(String[] args) {
+	public static void createDasheFile() {
 	
 		BufferedReader br = null;
 		BufferedWriter bwStart = null;
@@ -46,7 +46,7 @@ public class Dashe {
 				String [] csvData = line.split(csvSplitBy);
 				//write to output file
 				addProfile(csvData);
-				System.out.println("Successfully added profile " + csvData[0]);
+				System.out.println("Dashe: Successfully added profile " + csvData[0]);
 				br.mark(10000);
 				//add comma after profile if there are still more profiles
 				if ((line = br.readLine()) != null) {
