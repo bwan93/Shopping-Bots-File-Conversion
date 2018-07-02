@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Wop {
 	
-	public static File inputFile = new File("C:/Users/chris/Desktop/ProgForBen/Master File.csv");
+	public static File inputFile = new File("User Profile.csv");
 	public static File outputFile = new File("C:/Users/chris/Desktop/ProgForBen/NewWop.json");
 	
 	public static void main(String[] args) {

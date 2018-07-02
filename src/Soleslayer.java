@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.File;
 public class Soleslayer {
 	
-	public static File inputFile = new File("C:/Users/chris/Desktop/ProgForBen/Master File.csv");
+	public static File inputFile = new File("User Profile.csv");
 	public static File outputFile = new File("C:/Users/chris/Desktop/ProgForBen/NewSoleslayer.txt");
 	
 	public static void main(String[] args) {
@@ -71,7 +71,7 @@ public class Soleslayer {
 						+ data[30] + "\t"					//Card Type//
 						+ data[26] + "\t"					//Card Number//
 						+ data[29] + "\t"					//Card CVV//
-						+ data[27] + "/" + data[28] + "\t"	//Card Expires//
+						+ data[27] + "/" + data[28].substring(data[28].length() - 2) + "\t"	//Card Expires//
 						//!data!//
 						+ data[9] + "\t"					//Billing Country//
 						+ data[11] + "\t"					//Billing Phone//

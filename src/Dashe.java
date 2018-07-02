@@ -8,7 +8,7 @@ import java.io.File;
 
 public class Dashe {
 	
-	public static File inputFile = new File("C:/Users/chris/Desktop/ProgForBen/Master File.csv");
+	public static File inputFile = new File("User Profile.csv");
 	public static File outputFile = new File("C:/Users/chris/Desktop/ProgForBen/NewDashe.json");
 	
 	public static void main(String[] args) {
